@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
 
+
 const statusEnum = ['AVAILABLE', 'NOT ABAILABLE', 'DISCONTINUED'];
 //creamos el esquema de la base de datos para los productos
-const productSchema = new mongoose.Schema({
+const ProductSchema = new mongoose.Schema({
 //escribimos los campos que tendra la base de datos
 name: {
     type: String,
@@ -32,10 +33,11 @@ price: {
     type: Number,
     required: [true, 'Price is required'],
     min: [0, 'Price must be a positive number']
+},
+image: {
+    type: String,
+    default: "https://picsum.photos/400"
 }
 })
 
-export default mongoose.model('Product', productSchema);
-//https://d1lb3lf90ja1l2.cloudfront.net/82807996496/82807996496-meeting-2972ac8f-37ec-4038-bcfe-928ad5c6c29f.mp4
-
-//1:02:
+export default mongoose.model('Product', ProductSchema);
