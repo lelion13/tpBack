@@ -4,7 +4,9 @@
   "main": "./tpback/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./tpback/index.js",
+    "dev": "nodemon ./tpback/index.js"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +14,13 @@
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9",
+    "npm-check-updates": "^17.1.14"
+  }
 }
