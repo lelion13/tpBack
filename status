@@ -1,7 +1,15 @@
 //https://d1lb3lf90ja1l2.cloudfront.net/82807996496/82807996496-meeting-2972ac8f-37ec-4038-bcfe-928ad5c6c29f.mp4
+//Listo
 
-//1:25:
+//https://d1lb3lf90ja1l2.cloudfront.net/82807996496/82807996496-meeting-c6e43fa6-9e46-4f9a-84cc-ea36906cb047.mp4
 
+
+{
+    "name": "juanperez",
+    "password": "miContrasenaSegura123",
+    "email": "juanperez1@example.com",
+    "roles": "ADMIN"
+}
 
 
 
@@ -10,3 +18,5 @@
 //password: wH7y3Ctytrfd8lp3
 //uri: mongodb+srv://userDb:wH7y3Ctytrfd8lp3@cluster0.oimrs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 //uri: mongodb+srv://userDb:wH7y3Ctytrfd8lp3@cluster0.oimrs.mongodb.net/back?retryWrites=true&w=majority&appName=Cluster0
+
+

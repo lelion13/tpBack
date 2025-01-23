@@ -3,6 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import productRoute from './src/Routes/productRoute.js';
 import { connectdb } from './src/db.js';
+import userRoute from './src/Routes/userRoute.js';
 
 //ejecucion de express para inicializar el servidor
 const app = express();
@@ -20,6 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api/product", productRoute);
+app.use("/api/user", userRoute);
 
 //conectar a la base de datos
 connectdb();
