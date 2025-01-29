@@ -5,16 +5,16 @@
 
 // validar en casa que funciona edit y delete category
 //validar en casa que funciona edit y delete producto
-// mismo para usuario
 
 
-
+http://localhost:3000/api/user/create
 {
-    "name": "juanperez",
+    "name": "juanperez3",
     "password": "miContrasenaSegura123",
-    "email": "juanperez1@example.com",
+    "email": "juanperez3@example.com",
     "roles": "ADMIN"
 }
+
 
 
 

@@ -22,8 +22,7 @@ password: {
     type: String,
     required: [true, 'Password is required'],
     trim: true,
-    minlegth: [8, 'Password must be at least 8 characters long'],
-    maxlength: [50, 'Password must be at most 50 characters long']
+    minlegth: [8, 'Password must be at least 8 characters long']
 },
 email: {
     type: String,

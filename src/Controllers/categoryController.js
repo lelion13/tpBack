@@ -27,7 +27,6 @@ export const createCategory = async (req, res) => {
     }
 };
 
-//validar que funcionan update y delete
 export const updateCategory = async (req, res) => {
     try {
         const { id } = req.params;
@@ -42,7 +41,6 @@ export const updateCategory = async (req, res) => {
     }
 };
 
-// ELIMINAR CATEGORÍA
 export const deleteCategory = async (req, res) => {
     try {
         const { id } = req.params;
