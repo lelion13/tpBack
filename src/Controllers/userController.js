@@ -37,6 +37,53 @@ export const createUser = async (req, res) => {
         res.status(500).json({ message: "Internal server error", error });
     }
 };
+//validar en casa...
+export const editUser = async (req, res) => {
+    console.log('Voy a pasar por: editUser');
+    try {
+        const { id } = req.params;
+        console.log(`Voy a editar el usuario con ID: ${id}`);
+
+        // Si la solicitud incluye una nueva contraseña, la encripta
+        if (req.body.password) {
+            req.body.password = await bcrypt.hash(req.body.password, 10);
+        }
+
+        const updatedUser = await User.findByIdAndUpdate(id, req.body, { new: true, runValidators: true });
+
+        if (!updatedUser) {
+            console.log('Usuario no encontrado');
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        console.log('Usuario actualizado:', updatedUser);
+        return res.json(updatedUser);
+    } catch (error) {
+        console.error('Error al actualizar usuario:', error);
+        return res.status(500).json({ message: "Internal server error", error });
+    }
+};
+//validar en casa...
+export const deleteUser = async (req, res) => {
+    console.log('Voy a pasar por: deleteUser');
+    try {
+        const { id } = req.params;
+        console.log(`Voy a eliminar el usuario con ID: ${id}`);
+
+        const deletedUser = await User.findByIdAndDelete(id);
+
+        if (!deletedUser) {
+            console.log('Usuario no encontrado');
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        console.log('Usuario eliminado:', deletedUser);
+        return res.status(200).json({ message: "User deleted successfully" });
+    } catch (error) {
+        console.error('Error al eliminar usuario:', error);
+        return res.status(500).json({ message: "Internal server error", error });
+    }
+};
 
 
 export const validate = async (req, res) => {

@@ -10,5 +10,7 @@ const productRoute = Router();
 productRoute.get('/get',verifyTokenMiddleware, getProducts);
 productRoute.post('/create', createProduct);
 productRoute.put('/edit/:id', editProduct);
+// Eliminar un producto por ID
+productRoute.delete("/delete/:id", deleteProduct);
 
 export default productRoute;

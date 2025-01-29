@@ -26,3 +26,33 @@ export const createCategory = async (req, res) => {
         return res.status(500).json({ message: error.message });
     }
 };
+
+//validar que funcionan update y delete
+export const updateCategory = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const updatedCategory = await Category.findByIdAndUpdate(id, req.body, { new: true });
+
+        if (!updatedCategory) {
+            return res.status(404).json({ message: "Category not found" });
+        }
+        return res.status(200).json(updatedCategory);
+    } catch (error) {
+        return res.status(500).json({ message: error.message });
+    }
+};
+
+// ELIMINAR CATEGORÍA
+export const deleteCategory = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const deletedCategory = await Category.findByIdAndDelete(id);
+
+        if (!deletedCategory) {
+            return res.status(404).json({ message: "Category not found" });
+        }
+        return res.status(200).json({ message: "Category deleted successfully" });
+    } catch (error) {
+        return res.status(500).json({ message: error.message });
+    }
+};
