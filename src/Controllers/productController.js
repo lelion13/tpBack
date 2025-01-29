@@ -4,7 +4,7 @@ export const getProducts = async (req, res) => {
     console.log('Voy a pasar por: getProducts');
     try {
         console.log('Voy a buscar los productos');
-        const Products = await Product.find();
+        const Products = await Product.find().populate('category');
         console.log('Productos encontrados:', Products); // Consola para depurar los resultados
         if (Products.length === 0) {
             console.log('No se encontraron productos');
@@ -32,5 +32,30 @@ export const createProduct = async (req, res) => {
         return res.status(201).json(productData);
     } catch (error) {
         res.status(500).json({ message: "Internal server error", error });
+    }
+};
+
+export const editProduct = async (req, res) => {
+    console.log('Voy a pasar por: editProduct');
+    try {
+        const { id } = req.params;
+        console.log(`Voy a editar el producto con ID: ${id}`);
+        
+        const updatedProduct = await Product.findByIdAndUpdate(
+            id,
+            req.body,
+            { new: true, runValidators: true }
+        ).populate('category');
+
+        if (!updatedProduct) {
+            console.log('Producto no encontrado');
+            return res.status(404).json({ message: 'Product not found' });
+        }
+
+        console.log('Producto actualizado:', updatedProduct);
+        return res.json(updatedProduct);
+    } catch (error) {
+        console.error('Error al actualizar producto:', error);
+        return res.status(500).json({ message: "Internal server error", error });
     }
 };

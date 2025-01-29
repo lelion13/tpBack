@@ -1,6 +1,7 @@
 import User from "../models/userModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import { SECRET } from "../config.js";
 
 export const getUsers = async (req, res) => {
     console.log('Voy a pasar por: getUsers');
@@ -62,7 +63,7 @@ export const validate = async (req, res) => {
             }
             
             //const token = jwt.sign(payload, process.env.SECRET_KEY, {
-            const token = jwt.sign(payload, "secret", { expiresIn: '1h' });
+            const token = jwt.sign(payload, SECRET, { expiresIn: '1h' });
             const role = userFound.roles;
             return res.status(200).json({ message: 'Logged in', token, role, user:{id: userFound._id, email: userFound.email}});
         }  else {

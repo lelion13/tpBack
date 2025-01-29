@@ -37,7 +37,8 @@ price: {
 image: {
     type: String,
     default: "https://picsum.photos/400"
-}
-})
+},
+category: { type: mongoose.Schema.Types.ObjectId, ref: "category" }
+});
 
 export default mongoose.model('Product', ProductSchema);
