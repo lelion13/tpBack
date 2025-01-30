@@ -1,11 +1,11 @@
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import productRoute from './src/Routes/productRoute.js';
-import { connectdb } from './src/db.js';
-import userRoute from './src/Routes/userRoute.js';
-import { PORT } from './src/config.js';
-import categoryRoute from './src/Routes/categoryRoute.js';
+import productRoute from '../src/Routes/productRoute.js';
+import { connectdb } from '../src/db.js';
+import userRoute from '../src/Routes/userRoute.js';
+import { PORT } from '../src/config.js';
+import categoryRoute from '../src/Routes/categoryRoute.js';
 
 //ejecucion de express para inicializar el servidor
 const app = express();
