@@ -1,0 +1,78 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Product",
+    "collectionId": "8cf3818d-3f95-4d91-9305-be7e89ea7624",
+    "dateExported": "2025-01-30T00:37:58.744Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3148225f-9afc-4841-b951-0c9625a8f01a",
+            "colId": "8cf3818d-3f95-4d91-9305-be7e89ea7624",
+            "containerId": "",
+            "name": "http://localhost:3000/api/product/get",
+            "url": "http://localhost:3000/api/product/get",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-01-29T02:09:46.809Z",
+            "modified": "2025-01-29T22:25:46.200Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzkxOGU5NDMxMWU4NDA0MzZlMjFhOGIiLCJ1c2VyRW1haWwiOiJqdWFucGVyZXpAZXhhbXBsZS5jb20iLCJVc2VyUm9sZXMiOiJBRE1JTiIsImlhdCI6MTczODE4ODc3MCwiZXhwIjoxNzM4MTkyMzcwfQ.4fBKhWSw3Kb8OrGtGlqYHajIo9w19b72lF6DSYtaijU"
+            }
+        },
+        {
+            "_id": "14f0943c-58ef-4d72-a722-0e622e0a157f",
+            "colId": "8cf3818d-3f95-4d91-9305-be7e89ea7624",
+            "containerId": "",
+            "name": "http://localhost:3000/api/product/create",
+            "url": "http://localhost:3000/api/product/create",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-01-29T02:09:58.741Z",
+            "modified": "2025-01-29T22:46:36.747Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"1 vez por semana yogaaaaaaaaaaaaaaa\",\n    \"status\": \"AVAILABLE\",\n    \"price\": 15000,\n    \"category\": \"67998d9182be00264398617a\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "894e5aa2-b47c-44b0-bc07-5ef93b8b5c69",
+            "colId": "8cf3818d-3f95-4d91-9305-be7e89ea7624",
+            "containerId": "",
+            "name": "http://localhost:3000/api/product/update",
+            "url": "http://localhost:3000/api/product/update/679aaf0698f9b1699f6cb9af",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-01-29T02:52:11.311Z",
+            "modified": "2025-01-29T22:46:16.457Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"category\": \"679aabf564882d84e97c6e76\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "33cfbb71-0c53-47db-81c4-862f0e5f14af",
+            "colId": "8cf3818d-3f95-4d91-9305-be7e89ea7624",
+            "containerId": "",
+            "name": "http://localhost:3000/api/product/delete",
+            "url": "http://localhost:3000/api/product/delete/679aafcc98f9b1699f6cb9bb",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2025-01-29T22:41:14.092Z",
+            "modified": "2025-01-29T22:48:27.877Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"category\": \"67998d9182be00264398617a\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "b4D-8va6GIJwcYA1FkfNGENcbdw0vrta3mnkaW2j2ztd4KKbi--tqodKqFvr9-tmbGMVSLcmx1wir58prwkQ6A"
+}

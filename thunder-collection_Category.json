@@ -1,0 +1,73 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Category",
+    "collectionId": "8fcc4f20-ac4f-4a64-a86c-b97314fa4be1",
+    "dateExported": "2025-01-30T00:37:50.170Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ec19d6e7-56b0-4d1c-88f6-c24fd88dd275",
+            "colId": "8fcc4f20-ac4f-4a64-a86c-b97314fa4be1",
+            "containerId": "",
+            "name": "http://localhost:3000/api/category/get",
+            "url": "http://localhost:3000/api/category/get",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-01-29T02:03:27.711Z",
+            "modified": "2025-01-29T02:03:27.711Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzkxOTNlN2ZiYjI2NWZiYjMzN2FlM2IiLCJ1c2VyRW1haWwiOiJqdWFucGVyZXoxQGV4YW1wbGUuY29tIiwiVXNlclJvbGVzIjoiQURNSU4iLCJpYXQiOjE3MzgxMTA4MDEsImV4cCI6MTczODExNDQwMX0.zGx0-4zvMfvopLYia6c7Zt19rxDTnpr6gE0DXF_vVh4"
+            }
+        },
+        {
+            "_id": "af927145-c3f1-4da6-9d96-cdd49b09352f",
+            "colId": "8fcc4f20-ac4f-4a64-a86c-b97314fa4be1",
+            "containerId": "",
+            "name": "http://localhost:3000/api/category/create",
+            "url": "http://localhost:3000/api/category/create",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-01-29T02:09:07.763Z",
+            "modified": "2025-01-29T22:35:34.940Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Yogaaaaaaaaaaaaaaa\",\n    \"description\": \"Hatha Yoga\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "903b9469-c3e3-4ea5-bb9a-45544be2177d",
+            "colId": "8fcc4f20-ac4f-4a64-a86c-b97314fa4be1",
+            "containerId": "",
+            "name": "http://localhost:3000/api/category/update",
+            "url": "http://localhost:3000/api/category/update/679aabf564882d84e97c6e76",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-01-29T22:30:47.007Z",
+            "modified": "2025-01-29T22:34:58.679Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Yoga\",\n    \"description\": \"Hatha-Yoga\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "519d3208-bc50-4688-a20f-3d934f630b85",
+            "colId": "8fcc4f20-ac4f-4a64-a86c-b97314fa4be1",
+            "containerId": "",
+            "name": "http://localhost:3000/api/category/delete",
+            "url": "http://localhost:3000/api/category/delete/679aad368596c883f035b92a",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2025-01-29T22:35:45.647Z",
+            "modified": "2025-01-29T22:36:56.060Z",
+            "headers": []
+        }
+    ],
+    "ref": "9MaYZYO_vDMyWUqo3eAcoczUt1JgdQ5YdGlui0WDSjQKE6tcSmCXt-m3Quoh3X13IaAXZ8RrIPASiDuEPGkX4w"
+}

@@ -1,0 +1,94 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "User",
+    "collectionId": "714bd10d-07e6-45f2-87a1-f0f576004cd1",
+    "dateExported": "2025-01-30T00:35:57.916Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "98693106-36af-4181-a478-45ece2a8b5cc",
+            "colId": "714bd10d-07e6-45f2-87a1-f0f576004cd1",
+            "containerId": "",
+            "name": "http://localhost:3000/api/user/create",
+            "url": "http://localhost:3000/api/user/create",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-01-23T00:47:07.536Z",
+            "modified": "2025-01-29T23:34:11.900Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"juanperez3\",\n    \"password\": \"miContrasenaSegura123\",\n    \"email\": \"juanperez3@example.com\",\n    \"roles\": \"ADMIN\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzlhYjliMTZiMTZhOGUwM2IzMmE2Y2IiLCJ1c2VyRW1haWwiOiJqdWFucGVyZXozQGV4YW1wbGUuY29tIiwiVXNlclJvbGVzIjoiTUVSQ0hBTlQiLCJpYXQiOjE3MzgxOTM1NzEsImV4cCI6MTczODE5NzE3MX0.9iCuH5rw7lQFPa9CEjEpofD81SgpnrmCboSeh_CdvV0"
+            }
+        },
+        {
+            "_id": "ebda2bc7-27b3-46d7-aa70-4ed58dfa7d1e",
+            "colId": "714bd10d-07e6-45f2-87a1-f0f576004cd1",
+            "containerId": "",
+            "name": "http://localhost:3000/api/user/get",
+            "url": "http://localhost:3000/api/user/get",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2025-01-29T22:03:18.692Z",
+            "modified": "2025-01-29T22:03:55.537Z",
+            "headers": []
+        },
+        {
+            "_id": "f242d5c4-970c-4a6d-9502-4a9a30824e8b",
+            "colId": "714bd10d-07e6-45f2-87a1-f0f576004cd1",
+            "containerId": "",
+            "name": "http://localhost:3000/api/user/login",
+            "url": "http://localhost:3000/api/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-01-29T02:40:25.821Z",
+            "modified": "2025-01-29T23:32:51.437Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"juanperez3\",\n    \"password\": \"miContrasenaSegura123\",\n    \"email\": \"juanperez3@example.com\",\n    \"roles\": \"ADMIN\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2de1244a-db71-4856-85b0-dc6c76e04f59",
+            "colId": "714bd10d-07e6-45f2-87a1-f0f576004cd1",
+            "containerId": "",
+            "name": "http://localhost:3000/api/user/update",
+            "url": "http://localhost:3000/api/user/update/679ab9b16b16a8e03b32a6cb",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-01-29T22:04:31.352Z",
+            "modified": "2025-01-29T23:33:20.703Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"roles\": \"MERCHANT\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzlhYjliMTZiMTZhOGUwM2IzMmE2Y2IiLCJ1c2VyRW1haWwiOiJqdWFucGVyZXozQGV4YW1wbGUuY29tIiwiVXNlclJvbGVzIjoiTUVSQ0hBTlQiLCJpYXQiOjE3MzgxOTM1NzEsImV4cCI6MTczODE5NzE3MX0.9iCuH5rw7lQFPa9CEjEpofD81SgpnrmCboSeh_CdvV0"
+            }
+        },
+        {
+            "_id": "57f128da-0ae2-4e98-9b32-6f1191d73842",
+            "colId": "714bd10d-07e6-45f2-87a1-f0f576004cd1",
+            "containerId": "",
+            "name": "http://localhost:3000/api/user/delete",
+            "url": "http://localhost:3000/api/user/delete/679aa70f93dbb24dd24ee0f7",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2025-01-29T22:10:42.711Z",
+            "modified": "2025-01-29T22:11:47.650Z",
+            "headers": []
+        }
+    ],
+    "ref": "JQnwmLYORKrUVt3mkakHDLDXZZCSId9o9A-3nf0-tQvbtpyZASC-fhPV4nTUR0T00A3kit0I6SJHeORrCGAP7g"
+}
