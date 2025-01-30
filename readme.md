@@ -77,6 +77,26 @@ npm run dev
 📌 `DELETE` - `/api/category/delete/:id` → Eliminar una categoría (requiere autenticación)  
 📌 `PUT` - `/api/category/update/:id` → Modificar una categoría (requiere autenticación)  
 
+
+## 🌐 Rutas Principales de la API  en VERCEL
+### 👤 **User**  
+📌 `GET` - `https://tp-back-three.vercel.app/api/user/get` → Obtener todos los usuarios  
+📌 `POST` - `https://tp-back-three.vercel.app/api/user/create` → Crear un usuario (requiere autenticación y rol ADMIN)  
+📌 `DELETE` - `https://tp-back-three.vercel.app/api/user/delete/:id` → Eliminar un usuario (requiere autenticación y rol ADMIN)  
+📌 `PUT` - `https://tp-back-three.vercel.app/api/user/update/:id` → Modificar un usuario (requiere autenticación y rol ADMIN)
+📌 `POST` - `https://tp-back-three.vercel.app/api/user/login` → Valida usuario y contraseña, si es valido devuelve un token para autenticación (requiere autenticación y rol ADMIN)
+
+### 📦 **Product**  
+📌 `GET` - `https://tp-back-three.vercel.app/api/product/get` → Obtener todos los productos  
+📌 `POST` - `https://tp-back-three.vercel.app/api/product/create` → Crear un producto (requiere autenticación y rol MERCHANT) 
+📌 `DELETE` - `https://tp-back-three.vercel.app/api/product/delete/:id` → Eliminar un producto (requiere autenticación y rol MERCHANT)
+📌 `PUT` - `https://tp-back-three.vercel.app/api/product/update/:id` → Modificar un producto (requiere autenticación y rol MERCHANT)
+
+### 📂 **Category**  
+📌 `GET` - `https://tp-back-three.vercel.app/api/category/get` → Obtener todas las categorías  
+📌 `POST` - `https://tp-back-three.vercel.app/api/category/create` → Crear una categoría (requiere autenticación)  
+📌 `DELETE` - `https://tp-back-three.vercel.app/api/category/delete/:id` → Eliminar una categoría (requiere autenticación)  
+📌 `PUT` - `https://tp-back-three.vercel.app/api/category/update/:id` → Modificar una categoría (requiere autenticación) 
 ---
 
 ## 🔧 **Ejemplos de Datos Mock**  
