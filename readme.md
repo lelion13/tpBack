@@ -60,21 +60,22 @@ npm run dev
 
 ### 👤 **User**  
 📌 `GET` - `/api/user/get` → Obtener todos los usuarios  
-📌 `POST` - `/api/user/create` → Crear un usuario  
-📌 `DELETE` - `/api/user/delete/:id` → Eliminar un usuario  
-📌 `PUT` - `/api/user/update/:id` → Modificar un usuario  
+📌 `POST` - `/api/user/create` → Crear un usuario (requiere autenticación y rol ADMIN)  
+📌 `DELETE` - `/api/user/delete/:id` → Eliminar un usuario (requiere autenticación y rol ADMIN)  
+📌 `PUT` - `/api/user/update/:id` → Modificar un usuario (requiere autenticación y rol ADMIN)
+📌 `POST` - `/api/user/login` → Valida usuario y contraseña, si es valido devuelve un token para autenticación (requiere autenticación y rol ADMIN)
 
 ### 📦 **Product**  
 📌 `GET` - `/api/product/get` → Obtener todos los productos  
-📌 `POST` - `/api/product/create` → Crear un producto  
-📌 `DELETE` - `/api/product/delete/:id` → Eliminar un producto  
-📌 `PUT` - `/api/product/update/:id` → Modificar un producto  
+📌 `POST` - `/api/product/create` → Crear un producto (requiere autenticación y rol MERCHANT) 
+📌 `DELETE` - `/api/product/delete/:id` → Eliminar un producto (requiere autenticación y rol MERCHANT)
+📌 `PUT` - `/api/product/update/:id` → Modificar un producto (requiere autenticación y rol MERCHANT)
 
 ### 📂 **Category**  
 📌 `GET` - `/api/category/get` → Obtener todas las categorías  
-📌 `POST` - `/api/category/create` → Crear una categoría  
-📌 `DELETE` - `/api/category/delete/:id` → Eliminar una categoría  
-📌 `PUT` - `/api/category/update/:id` → Modificar una categoría  
+📌 `POST` - `/api/category/create` → Crear una categoría (requiere autenticación)  
+📌 `DELETE` - `/api/category/delete/:id` → Eliminar una categoría (requiere autenticación)  
+📌 `PUT` - `/api/category/update/:id` → Modificar una categoría (requiere autenticación)  
 
 ---
 
@@ -92,6 +93,3 @@ Para realizar pruebas rápidas con **Thunder Client**, importa los siguientes ar
 
 💡 **¡Listo para probar!** Si tienes dudas, revisa la documentación o contribuye al proyecto. 🎯🚀  
 ```
-
-Este `README.md` ahora tiene una estructura más atractiva con iconos y secciones bien organizadas.  
-Déjame saber si quieres agregar algo más. 😃🔥
