@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "Product",
     "collectionId": "8cf3818d-3f95-4d91-9305-be7e89ea7624",
-    "dateExported": "2025-01-30T00:37:58.744Z",
+    "dateExported": "2025-01-30T01:12:49.174Z",
     "version": "1.2",
     "folders": [],
     "requests": [
@@ -31,12 +31,16 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2025-01-29T02:09:58.741Z",
-            "modified": "2025-01-29T22:46:36.747Z",
+            "modified": "2025-01-30T01:11:11.569Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"name\": \"1 vez por semana yogaaaaaaaaaaaaaaa\",\n    \"status\": \"AVAILABLE\",\n    \"price\": 15000,\n    \"category\": \"67998d9182be00264398617a\"\n}",
+                "raw": "{\n    \"name\": \"2 vez por semana yoga\",\n    \"status\": \"AVAILABLE\",\n    \"price\": 25000,\n    \"category\": \"67998d9182be00264398617a\"\n}",
                 "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzlhYjliMTZiMTZhOGUwM2IzMmE2Y2IiLCJ1c2VyRW1haWwiOiJqdWFucGVyZXozQGV4YW1wbGUuY29tIiwiVXNlclJvbGVzIjoiTUVSQ0hBTlQiLCJpYXQiOjE3MzgxOTk0MjQsImV4cCI6MTczODIwMzAyNH0.4kn5zF84OvnYv4vNezP3zxAbK5SyuoOpsaFMkJVQaEk"
             }
         },
         {
@@ -44,16 +48,20 @@
             "colId": "8cf3818d-3f95-4d91-9305-be7e89ea7624",
             "containerId": "",
             "name": "http://localhost:3000/api/product/update",
-            "url": "http://localhost:3000/api/product/update/679aaf0698f9b1699f6cb9af",
+            "url": "http://localhost:3000/api/product/update/679ad1af80b17cd1196b03d9",
             "method": "PUT",
             "sortNum": 30000,
             "created": "2025-01-29T02:52:11.311Z",
-            "modified": "2025-01-29T22:46:16.457Z",
+            "modified": "2025-01-30T01:12:29.954Z",
             "headers": [],
             "body": {
                 "type": "json",
                 "raw": "{\n    \"category\": \"679aabf564882d84e97c6e76\"\n}",
                 "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzlhYjliMTZiMTZhOGUwM2IzMmE2Y2IiLCJ1c2VyRW1haWwiOiJqdWFucGVyZXozQGV4YW1wbGUuY29tIiwiVXNlclJvbGVzIjoiTUVSQ0hBTlQiLCJpYXQiOjE3MzgxOTk0MjQsImV4cCI6MTczODIwMzAyNH0.4kn5zF84OvnYv4vNezP3zxAbK5SyuoOpsaFMkJVQaEk"
             }
         },
         {
@@ -74,5 +82,5 @@
             }
         }
     ],
-    "ref": "b4D-8va6GIJwcYA1FkfNGENcbdw0vrta3mnkaW2j2ztd4KKbi--tqodKqFvr9-tmbGMVSLcmx1wir58prwkQ6A"
+    "ref": "b4D-8va6GIJwcYA1FkfNGENcbdw0vrta3mnkaW2j2zvasCiWiJ1A8pHuTARj_uovVNXYR-68tClLFFJAnp5Nqg"
 }
